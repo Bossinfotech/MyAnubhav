@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- login_screen colors -->
+
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+
+	<color name="_bg__login_screen_color">#FFFFFF</color>
+	<color name="rectangle_2_color">#D5D3D2</color>
+	<color name="continue_via_phone_color">#000000</color>
+	<color name="rectangle_4_color">#ffffff</color>
+	<color name="by_continuing_you_accept_our_privacy_policy_and_t_c_color">#827D7D</color>
+
+	<color name="jobstext">#EEF5F6</color>
+
+	<!-- phone_number_screen colors -->
+	<color name="_bg__phone_number_screen_ek2_color">#FFFFFF</color>
+	<color name="mobile_color">#000000</color>
+	<color name="rectangle_1_color">#04AEC4</color>
+
+	<!-- otp_screen colors -->
+	<color name="_bg__otp_screen_color">#FFFFFF</color>
+	<color name="otp_verification_color">#000000</color>
+
+	<color name="gray">#808080</color>
+	<color name="light_gray">#D3D3D3</color>
+	<color name="indigo_50">#E4E6EE</color>
+	<color name="indigo_60">#E8EAF6</color>
+	<color name="blue_gray">#5E6B92</color>
+	<color name="indigo_A200">#536DFE</color>
+	<color name="indigo_800">#283593</color>
+	<color name="company_color">#04AEC4</color>
+	<color name="red_a200">#FF5252</color>
+	<color name="blue_900">#1E223C</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item
+         android:id="@+id/home"
+         android:icon="@drawable/ic_home__1_"
+         android:title="@string/home" />
+
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/ic_explore"
+        android:title="@string/explore"/>
+
+    <item
+        android:id="@+id/contribute"
+        android:icon="@drawable/ic_add__1_"
+        android:title="@string/contribute" />
+
+
+    <item
+        android:id="@+id/reward"
+        android:icon="@drawable/rewicon"
+        android:title="@string/rewards" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/iconprofile"
+        android:title="@string/profile" />
+
+
+
+</menu>

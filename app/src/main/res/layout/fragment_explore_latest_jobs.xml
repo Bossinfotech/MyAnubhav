@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.ExploreLatestJobsFragment">
+
+    <TextView
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/textView_DiscoverJobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:text="@string/discover_jobs_n_you_love"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/jobsearchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/searchview"
+        android:iconifiedByDefault="false"
+        android:padding="2dp"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search by Company or Designation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_DiscoverJobs" />
+
+
+    <TextView
+        android:id="@+id/textViewPopularJobsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/popular_jobs_searches"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_regular"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobsearchbar" />
+
+    <TextView
+        android:id="@+id/textviewDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/jobstextview"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/developer_40_1k"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPopularJobsSearch" />
+
+
+    <TextView
+        android:id="@+id/textViewManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:text="@string/manager_8_4_k"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewDeveloper" />
+
+    <TextView
+
+        android:id="@+id/textViewFullstackDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:text="@string/full_stack_developer_8_8k"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewManager" />
+
+    <TextView
+        android:id="@+id/textViewJavaDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/java_developer_8_34k"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullstackDeveloper" />
+
+
+    <TextView
+        android:id="@+id/textViewSoftwareEngineer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/software_engineer_7_1_k"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEngineer"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJavaDeveloper" />
+
+    <TextView
+        android:id="@+id/textViewEngineer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/engineer_6_9_k"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSoftwareEngineer"
+        app:layout_constraintTop_toBottomOf="@id/textViewJavaDeveloper" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/jobstextview"
+        android:backgroundTint="@color/jobstext"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/senior_software_engineer_6_6k"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSoftwareEngineer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

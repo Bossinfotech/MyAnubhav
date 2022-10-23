@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930501295544",
+    "firebase_url": "https://myanubhav-e041c-default-rtdb.firebaseio.com",
+    "project_id": "myanubhav-e041c",
+    "storage_bucket": "myanubhav-e041c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930501295544:android:3b9156a43748ecb9a7234d",
+        "android_client_info": {
+          "package_name": "com.metafisa.myanubhav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930501295544-09gegu96aa65rh368i5rjksvlntak6ls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metafisa.myanubhav",
+            "certificate_hash": "034319c193dba3cda569cbc910bacb9430ee44ad"
+          }
+        },
+        {
+          "client_id": "930501295544-e1no0nr5rcr9okb8o1dlg8l933rsgtvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW9mpLo-YUMQsjJrJcj8swEjqMipNVgmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930501295544-e1no0nr5rcr9okb8o1dlg8l933rsgtvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

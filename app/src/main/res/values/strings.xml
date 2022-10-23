@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- login_screen strings -->
+
+    <string name="app_name">MyAnubhav</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="continue_via_phone_string">Continue via Phone</string>
+    <string name="google_string">Google</string>
+    <string name="by_continuing_you_accept_our_privacy_policy_and_t_c_string">By continuing,you accept our Privacy Policy and T&amp;C</string>
+    <string name="login_for_personalised_experience_string">Login for personalised experience</string>
+    <string name="linkedln_string">Linkedln</string>
+    <string name="myanubhav_string">MyAnubHav</string>
+
+    <!-- phone_number__screen strings -->
+    <string name="mobile_string">Mobile</string>
+    <string name="enter_your_phone_number_string">Enter Your Phone Number</string>
+    <string name="we_will_send_you_the_6_digit_verification_code_string">We will send you the 6-digit verification code</string>
+    <string name="generate_otp_string">GENERATE OTP</string>
+    <string name="_8103910578_string">8103910578</string>
+    <string name="__91_string">+91</string>
+
+    <!-- otp__screen strings -->
+    <string name="otp_verification_string">OTP Verification</string>
+    <string name="enter_the_otp_sent_to__91_810391057_string">Enter the OTP sent</string>
+    <string name="verify___continue_string">VERIFY &amp; CONTINUE</string>
+    <string name="didn_t_receive_the_otp__resend_string">Didnt receive the OTP? RESEND</string>
+    <string name="_7_string">7</string>
+    <string name="_8_string">8</string>
+    <string name="_6_string">6</string>
+    <string name="_9_string">9</string>
+    <string name="_4_string">4</string>
+    <string name="_2_string">2</string>
+
+    <!-- company review__screen strings -->
+    <string name="search_ncompany_review_rating"><![CDATA[Search Company Review & Rating]]></string>
+    <string name="read_what_employees_are_saying_about">Read what employees are saying about companies</string>
+    <string name="browse_by_location">Browse By Location</string>
+    <string name="click_to_read_more">Click to read more >></string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="contribute">Contribute</string>
+    <string name="rewards">Rewards</string>
+    <string name="profile">Profile</string>
+
+    <string name="explore_activity">Explore_Activity</string>
+    <string name="ace_your_next_ninterview">ACE YOUR NEXT\nINTERVIEW !</string>
+    <string name="place_your_next_interview_with_nmy_anubhav">Place your next interview with\nMyAnubhav</string>
+    <string name="india_s_1_interview_platform_with_47k_companies">India ‘s #1 interview platform with 47K+ Companies</string>
+    <string name="popular_jobs_searches">Popular Jobs Searches</string>
+    <string name="discover_jobs_n_you_love">Discover Jobs\n You Love</string>
+    <string name="developer_40_1k">Developer (40.1K)</string>
+    <string name="manager_8_4_k">Manager (8.4 K)</string>
+    <string name="full_stack_developer_8_8k">Full Stack Developer (8.8K)</string>
+    <string name="java_developer_8_34k">Java Developer (8.34K)</string>
+    <string name="software_engineer_7_1_k">Software Engineer (7.1 K )</string>
+    <string name="engineer_6_9_k">Engineer (6.9 K)</string>
+    <string name="senior_software_engineer_6_6k">Senior Software Engineer (6.6K)</string>
+    <string name="search_nand_company_salaries">Search\nand Company Salaries</string>
+    <string name="compare_salaries_by_designations_and_experience">Compare salaries by designations and experience.</string>
+    <string name="salary_comparision">Salary Comparision</string>
+    <string name="compare_salaries_between_highest_paying_companies">Compare salaries between highest paying companies</string>
+    <string name="software_engineer">Software Engineer</string>
+    <string name="software_developer">Software Developer</string>
+    <string name="system_engineer">System Engineer</string>
+    <string name="senior_software_engineer">Senior Software Engineer</string>
+    <string name="process_associate">Process Associate</string>
+    <string name="associate_consultant">Associate Consultant</string>
+    <string name="senior_associate">Senior Associate</string>
+    <string name="analyst">Analyst</string>
+    <string name="softwwaretest_engineer">Softwwaretest Engineer</string>
+    <string name="senior_systems_engineer">Senior Systems Engineer</string>
+    <string name="sales_officer">Sales Officer</string>
+    <string name="programmer_analyst">Programmer Analyst</string>
+    <string name="relationship_manager">Relationship Manager</string>
+    <string name="customer_service_executive">Customer Service Executive</string>
+    <string name="senior_analyst">Senior Analyst</string>
+
+    <string-array name="experience">
+        <item>Fresher</item>
+        <item>1 year</item>
+        <item>2 Years</item>
+        <item>3 Years</item>
+        <item>4 Years</item>
+        <item>5 Years</item>
+        <item>6 Years</item>
+        <item>7 Years</item>
+        <item>8 Years</item>
+        <item>9 Years</item>
+        <item>10 Years</item>
+        <item>11 Years</item>
+        <item>12 Years</item>
+        <item>13 Years</item>
+        <item>14 Years</item>
+        <item>15 Years</item>
+        <item>16 Years</item>
+        <item>17 Years</item>
+        <item>18 Years</item>
+        <item>19 Years</item>
+        <item>20 Years</item>
+        <item>21 Years</item>
+        <item>22 Years</item>
+        <item>23 Years</item>
+        <item>24 Years</item>
+        <item>25 Years</item>
+        <item>26 Years</item>
+        <item>27 Years</item>
+        <item>28 Years</item>
+        <item>29 Years</item>
+        <item>30 Years</item>
+    </string-array>
+
+    <string-array name="job_type">
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Intern</item>
+        <item>Contractual</item>
+        <item>Temporary</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+    </string-array>
+
+    <string name="todo">TODO</string>
+    <string name="alan_walker">Alan Walker</string>
+    <string name="add_employment_details">Add employment details</string>
+    <string name="contributions_given">CONTRIBUTIONS GIVEN</string>
+    <string name="zero">0</string>
+    <string name="review">Review</string>
+    <string name="interview">Interview</string>
+    <string name="applied_job">Applied Job</string>
+    <string name="responses_received">RESPONSES RECEIVED</string>
+    <string name="helpful_vote">Helpful Vote</string>
+    <string name="view">View</string>
+    <string name="interview_experiences_by_you">Interview Experiences by you</string>
+    <string name="d">Salaries shared by you</string>
+    <string name="statement1">You haven\'t written any interview review so far.</string>
+    <string name="submit_interview_questions">Submit interview questions</string>
+    <string name="company_reviews_by_you">Company Reviews by you</string>
+    <string name="statement4">You haven\'t written any company review so far.</string>
+    <string name="rate_a_salary">Rate your company</string>
+    <string name="companies_you_follow">Companies you follow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_your_profile_details">Edit your profile details</string>
+    <string name="quotes">Are you a student or working professional?</string>
+    <string name="student_never_worked">Student/Never worked</string>
+    <string name="i_am_a_student_i_have_never_worked">I am a student / I have never worked</string>
+    <string name="your_job_title"><font size="40">Your Job Title</font></string>
+    <string name="recent_company"><font size="40">Your Recent Company</font></string>
+    <string name="working_professional">Working Professional</string>
+    <string name="i_am_working_i_have_worked_before">I am working / I have worked before</string>
+    <string name="your_work_experience">Your work experience</string>
+    <string name="_0_1_yr">0–1 yr</string>
+    <string name="_1_yr">1+ yr</string>
+    <string name="_2_yr">2+ yrs</string>
+    <string name="_3_yr">3+ yrs</string>
+    <string name="_4_yrs">4+ yrs</string>
+    <string name="_5_yrs">5+ yrs</string>
+    <string name="_6_yrs">6+ yrs</string>
+    <string name="_7_yrs">7+ yrs</string>
+    <string name="_8_yrs">8+ yrs</string>
+    <string name="_9_yrs">9+ yrs</string>
+    <string name="_10_15_yrs">10-15 yrs</string>
+    <string name="_15_20_yrs">15-20 yrs</string>
+    <string name="_20_yrs">20+ yrs</string>
+    <string name="save">Save</string>
+    <string name="interview_exp"><![CDATA[Share Your interview questions & help people get their dream job!]]></string>
+    <string name="company">Company Name</string>
+    <string name="job_title">Designation/Job Title</string>
+    <string name="share_details">Share details of your interview process</string>
+    <string name="what_was_round_1">What was round 1?</string>
+    <string name="resume_shortlist">Resume Shortlist</string>
+    <string name="aptitude_test">Aptitude Test</string>
+    <string name="coding_test">Coding Test</string>
+    <string name="group_discussion">Group Discussion</string>
+    <string name="assignment">Assignment</string>
+    <string name="case_study">Case Study</string>
+    <string name="hr">HR</string>
+    <string name="technical">Technical</string>
+    <string name="one_on_one_round">One-on-One Round</string>
+    <string name="other">Other</string>
+    <string name="share_advice_for_job_seekers">Share advice for job seekers</string>
+    <string name="share_your_tips">Share your tips</string>
+    <string name="salary_details"><![CDATA[Share your salary & help make workplaces transparent!]]></string>
+    <string name="currently_working_here">Currently working here?</string>
+    <string name="yes">Yes</string>
+    <string name="no_former_employee">No, former employee</string>
+    <string name="last_year_of_employee">Last Year of Employee</string>
+    <string name="_2022">2022</string>
+    <string name="_2021">2021</string>
+    <string name="_2020">2020</string>
+    <string name="_2019">2019</string>
+    <string name="_2018">2018</string>
+    <string name="ctc_per_year">CTC Per Year</string>
+    <string name="lakh_crore">Lakh/Crore</string>
+    <string name="office_location">Office Location</string>
+    <string name="total_work_experience">Total Work Experience</string>
+    <string name="job_type">Job Type</string>
+    <string name="gender_optional">Gender (optional)</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="rating_details"><![CDATA[Rate a company & join 4 Million+ contributors to make a difference]]></string>
+    <string name="do_you_currently_work_here">Do you currently work here?</string>
+    <string name="no">No</string>
+    <string name="started_working_on">Started working on</string>
+    <string name="select_month">Select Month</string>
+    <string name="select_year">Select Year</string>
+    <string name="employment_ended_on">Employment ended on</string>
+    <string name="rate_the_company_on_the_following_criteria">Rate the company on the following criteria</string>
+    <string name="overall_rating">Overall Rating</string>
+    <string name="work_life_balance">Work-Life balance</string>
+    <string name="salary_amp_benefits"><![CDATA[Salary & Benefits]]></string>
+    <string name="promotions_or_appraisal">Promotions or Appraisal</string>
+    <string name="job_security">Job Security</string>
+    <string name="skill_development_learning">Skill Development / Learning</string>
+    <string name="work_satisfaction">Work Satisfaction</string>
+    <string name="company_culture">Company Culture</string>
+    <string name="what_do_you_like_about_working_at_your_company">What do you like about working at your company</string>
+    <string name="likes">Likes</string>
+    <string name="dislikes">Dislikes</string>
+    <string name="what_do_you_dislike_about_working_at_your_company">What do you dislike about working at your company?</string>
+    <string name="help_us_know_a_little_more_about_your_company_optional">Help us know a little more about your company! (Optional)</string>
+    <string name="does_your_job_require_you_to_travel_for_work">Does your job require you to travel for work?</string>
+    <string name="what_are_your_working_days">What are your working days?</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+    <string name="monday_to_saturday">Monday to Saturday</string>
+    <string name="alternate_saturdays_off">Alternate Saturdays off</string>
+    <string name="rotational_shift">Rotational Shift</string>
+    <string name="all_7_days">All 7 days</string>
+    <string name="are_your_working_hour_strict_or_flexible">Are your working hour strict or flexible?</string>
+    <string name="strict">Strict</string>
+    <string name="flexible">Flexible</string>
+    <string name="what_is_the_work_policy_at_your_company">What is the work policy at your company?</string>
+    <string name="permanent_work_from_home">Permanent work from home</string>
+    <string name="working_from_office">Working from office</string>
+    <string name="hybrid_working_from_office_amp_home"><![CDATA[Hybrid (working from office & home)]]></string>
+    <string name="unclear_at_the_moment">Unclear at the moment</string>
+    <string name="department_e_g_sales">Department (e.g Sales)</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="salaries">You haven\'t submit any salary so far.</string>
+    <string name="submit_a_salary">Submit a Salary</string>
+
+    <string name="take_home_salary_calculator">Take home salary calculator</string>
+    <string name="companany_name">Companany Name</string>
+    <string name="annual_ctc">Annual CTC</string>
+    <string name="designation">Designation</string>
+    <string name="new_tax_regime">New Tax Regime</string>
+    <string name="old_tax_regime">Old Tax Regime</string>
+    <string name="select_tax_regime">Select tax Regime</string>
+    <string name="experience_in_years">Experience (in years)</string>
+    <string name="calculate">Calculate</string>
+
+    <string name="maintitle">Get Rewards\nfor helping others</string>
+    <string name="helpermsg">Share your advice.Help\nsomeone achieve their dream.</string>
+    <string name="contribute_earn_coins"><![CDATA[Contribute & Earn Coins]]></string>
+    <string name="myanubhav_rewards">MyAnubhav Rewards</string>
+    <string name="your_contributions_good_deeds_can_earn_you_gifts">Your contributions good deeds\ncan earn you gifts !</string>
+    <string name="you_save">You save Rs.</string>
+    <string name="want_to_suggest_new_rewards">Want to suggest new rewards?</string>
+    <string name="submit">Submit</string>
+    <string name="contribute_earn_coinsthe"><![CDATA[Contribute & Earn Coins]]></string>
+    <string name="write_a_review">Write a Review</string>
+    <string name="earn_upto_200_coins">Earn upto 200 coins</string>
+    <string name="arrow"><![CDATA[>]]></string>
+    <string name="contibute_salary">Contibute Salary</string>
+    <string name="how_do_myanubhav_coins_work">How do MyAnubhav Coins\nWork?</string>
+    <string name="step_1">Step 1</string>
+    <string name="you_earn_coins_for_contributing_on_nmyanubhav">You earn coins for contributing on\nMyAnubhav.</string>
+    <string name="step_2">Step 2</string>
+    <string name="more_details">More details you put while contributing =\nMore MyAnubhav Coins.</string>
+    <string name="step_3">Step 3</string>
+    <string name="redeem_myanubhav_coins_against_an_exciting_list_of_rewards_curated_for_you">Redeem MyAnubhav Coins against an exciting\nlist of rewards curated for you.</string>
+    <string name="share_the_goodness">Share the Goodness!</string>
+</resources>

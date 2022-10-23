@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InterviewExperience">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:background="@color/company_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/salary_details"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_salary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/card_background"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/company"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red_a200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/job_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red_a200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currently_working_here"
+                android:textSize="17sp"
+                android:textColor="@color/blue_900"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_bg"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/blue_900"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"/>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_bg"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_former_employee"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/blue_900"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_year_of_employee"
+                android:textSize="17sp"
+                android:textColor="@color/blue_900"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="25dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="@string/_2022"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10sp"
+                        android:textColor="@color/blue_gray"
+                        android:background = "@drawable/button_bg"
+                        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="@string/_2021"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:layout_marginStart="14sp"
+                        android:textColor="@color/blue_gray"
+                        android:background = "@drawable/button_bg"
+                        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="@string/_2020"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:layout_marginStart="14sp"
+                        android:textColor="@color/blue_gray"
+                        android:background = "@drawable/button_bg"
+                        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="@string/_2019"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:layout_marginStart="14sp"
+                        android:textColor="@color/blue_gray"
+                        android:background = "@drawable/button_bg"
+                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/_2018"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ctc_per_year"
+                android:textSize="17sp"
+                android:textColor="@color/blue_900"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="25dp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/lakh_crore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/office_location"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                android:hint="@string/total_work_experience"
+                app:hintTextColor="@color/indigo_A200"
+                app:shapeAppearanceOverlay="@style/Button4"
+                android:layout_marginTop="15dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/total_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                android:hint="@string/job_type"
+                app:hintTextColor="@color/indigo_A200"
+                app:shapeAppearanceOverlay="@style/Button4"
+                android:layout_marginTop="15dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/Job_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_optional"
+                android:textSize="17sp"
+                android:textColor="@color/blue_900"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_bg"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="15dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/blue_900"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"/>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_bg"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/blue_900"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25sp"
+                android:backgroundTint="@color/company_color"
+                android:background="@drawable/button_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

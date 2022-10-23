@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InterviewExperience">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:background="@color/company_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/interview_exp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_undraw_interview_re_e5jn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/card_background"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/company"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red_a200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/job_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:shapeAppearanceOverlay="@style/Button4"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red_a200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_details"
+                    android:textSize="17sp"
+                    android:textColor="@color/blue_900"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="20dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/w"
+                    tools:ignore="ImageContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_was_round_1"
+                android:layout_marginStart="15dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue_900"
+                android:fontFamily="@font/poppins"
+                android:layout_marginEnd="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/resume_shortlist"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/aptitude_test"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/hr"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/group_discussion"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/assignment"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/case_study"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/technical"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/coding_test"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/one_on_one_round"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="@string/other"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14sp"
+                    android:textColor="@color/blue_gray"
+                    android:background = "@drawable/button_bg"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_advice_for_job_seekers"
+                    android:textSize="17sp"
+                    android:textColor="@color/blue_900"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/poppins_medium"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/pray"
+                    tools:ignore="ImageContrastCheck" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/share_your_tips"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:hintTextColor="@color/indigo_A200"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/company1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:minLines="6"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:textColorHint="#757575"
+                    android:textSize="17sp"
+                    android:textStyle="normal"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_marginStart="25sp"
+                android:layout_marginBottom="25sp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25sp"
+                android:backgroundTint="@color/company_color"
+                android:background="@drawable/button_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,533 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OtpScreen"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/rectangle_1_color"
+        android:text="@string/verify___continue_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_otp" />
+
+    <TextView
+        android:id="@+id/otp_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/otp_verification_string"
+        android:textColor="@color/otp_verification_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enter_the_otp_sent_to__91_810391057"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter the 6 Digit OTP"
+        android:textColor="@color/otp_verification_color"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_verification" />
+
+    <LinearLayout
+        android:id="@+id/otp_input"
+        app:layout_constraintTop_toBottomOf="@+id/otp_verification"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:id="@+id/inputotp1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/inputotp2"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/inputotp3"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/inputotp4"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/inputotp5"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+        <EditText
+            android:background="@drawable/backgroundbox"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/inputotp6"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/send_otp"
+        app:layout_constraintTop_toBottomOf="@+id/otp_input"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did't recive OTP ?"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send again"
+            android:textColor="#04AEC4"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:id="@+id/sendotp_again"/>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/forgot_password_re_hxwm_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="125dp"
+
+            android:layout_marginEnd="82dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/vector_ek1"
+                android:layout_width="60.55dp"
+                android:layout_height="88.98dp"
+                android:layout_marginStart="91.91dp"
+                android:layout_marginTop="80.91dp"
+                android:contentDescription="vector_ek1"
+                android:src="@drawable/v1"
+                app:layout_constraintStart_toStartOf="@+id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek2"
+                android:layout_width="60.85dp"
+                android:layout_height="87.69dp"
+                android:layout_marginStart="91.9dp"
+                android:layout_marginTop="80.53dp"
+                android:contentDescription="vector_ek2"
+                android:src="@drawable/v2"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek3"
+                android:layout_width="5.6dp"
+                android:layout_height="15.23dp"
+                android:contentDescription="vector_ek3"
+                android:src="@drawable/v3"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek4"
+                android:layout_width="15.61dp"
+                android:layout_height="9.28dp"
+                android:layout_marginStart="113.49dp"
+                android:layout_marginTop="125.23dp"
+                android:contentDescription="vector_ek4"
+                android:src="@drawable/vector_ek4"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek5"
+                android:layout_width="7.17dp"
+                android:layout_height="3.2dp"
+                android:layout_marginStart="136.15dp"
+                android:layout_marginTop="90.89dp"
+                android:contentDescription="vector_ek5"
+                android:src="@drawable/vector_ek5"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek6"
+                android:layout_width="101.11dp"
+                android:layout_height="57.74dp"
+                android:layout_marginStart="91.14dp"
+                android:layout_marginTop="124.97dp"
+                android:contentDescription="vector_ek6"
+                android:src="@drawable/vector_ek6"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek7"
+                android:layout_width="101.04dp"
+                android:layout_height="37.47dp"
+                android:layout_marginStart="91.56dp"
+                android:layout_marginTop="133.9dp"
+                android:contentDescription="vector_ek7"
+                android:src="@drawable/vector_ek7"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek8"
+                android:layout_width="7.27dp"
+                android:layout_height="14.42dp"
+                android:layout_marginStart="148.01dp"
+                android:layout_marginTop="125.29dp"
+                android:contentDescription="vector_ek8"
+                android:src="@drawable/vector_ek8"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek9"
+                android:layout_width="17.7dp"
+                android:layout_height="3.74dp"
+                android:layout_marginStart="129.07dp"
+                android:layout_marginTop="154.68dp"
+                android:contentDescription="vector_ek9"
+                android:src="@drawable/vector_ek9"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek10"
+                android:layout_width="4.58dp"
+                android:layout_height="6.46dp"
+                android:layout_marginStart="172.92dp"
+                android:layout_marginTop="134.2dp"
+                android:contentDescription="vector_ek10"
+                android:src="@drawable/vector_ek10"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek11"
+                android:layout_width="136.56dp"
+                android:layout_height="87.9dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="104.1dp"
+                android:contentDescription="vector_ek11"
+                android:src="@drawable/vector_ek11"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek12"
+                android:layout_width="156.31dp"
+                android:layout_height="33.06dp"
+                android:layout_marginStart="132.69dp"
+                android:layout_marginTop="17.82dp"
+                android:contentDescription="vector_ek12"
+                android:src="@drawable/vector_ek12"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek13"
+                android:layout_width="149.62dp"
+                android:layout_height="26.37dp"
+                android:layout_marginStart="136.03dp"
+                android:layout_marginTop="21.16dp"
+                android:contentDescription="vector_ek13"
+                android:src="@drawable/vector_ek13"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/ab6171fa_7d69_4734_b81c_8dff60f9761b"
+                android:layout_width="54dp"
+                android:layout_height="53.98dp"
+                android:layout_marginStart="45.41dp"
+                android:layout_marginTop="42.38dp"
+                android:contentDescription="ab6171fa_7d69_4734_b81c_8dff60f9761b"
+                android:src="@drawable/ab6171fa_7d69_4734_b81c_8dff60f9761b"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek14"
+                android:layout_width="0.35dp"
+                android:layout_height="0.76dp"
+                android:layout_marginStart="65.15dp"
+                android:layout_marginTop="94.27dp"
+                android:contentDescription="vector_ek14"
+                android:src="@drawable/vector_ek14"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek15"
+                android:layout_width="73.17dp"
+                android:layout_height="63.27dp"
+                android:layout_marginStart="34.08dp"
+                android:layout_marginTop="30.82dp"
+                android:contentDescription="vector_ek15"
+                android:src="@drawable/vector_ek15"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek16"
+                android:layout_width="12.12dp"
+                android:layout_height="41.58dp"
+                android:layout_marginStart="26.57dp"
+                android:layout_marginTop="150.42dp"
+                android:alpha="0.20000000298023"
+                android:contentDescription="vector_ek16"
+                android:src="@drawable/vector_ek16"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek17"
+                android:layout_width="12.12dp"
+                android:layout_height="44.69dp"
+                android:layout_marginStart="97.87dp"
+                android:layout_marginTop="147.31dp"
+                android:alpha="0.20000000298023"
+                android:contentDescription="vector_ek17"
+                android:src="@drawable/vector_ek17"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek18"
+                android:layout_width="16.93dp"
+                android:layout_height="29.97dp"
+                android:layout_marginStart="35.9dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="vector_ek18"
+                android:src="@drawable/vector_ek18"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek19"
+                android:layout_width="25.7dp"
+                android:layout_height="1.18dp"
+                android:layout_marginStart="151.33dp"
+                android:layout_marginTop="41.05dp"
+                android:contentDescription="vector_ek19"
+                android:src="@drawable/vector_ek19"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek20"
+                android:layout_width="25.71dp"
+                android:layout_height="1.18dp"
+                android:layout_marginStart="182.44dp"
+                android:layout_marginTop="41.25dp"
+                android:contentDescription="vector_ek20"
+                android:src="@drawable/vector_ek20"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek21"
+                android:layout_width="25.7dp"
+                android:layout_height="1.18dp"
+                android:layout_marginStart="213.55dp"
+                android:layout_marginTop="41.45dp"
+                android:contentDescription="vector_ek21"
+                android:src="@drawable/vector_ek21"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek22"
+                android:layout_width="25.69dp"
+                android:layout_height="1.18dp"
+                android:layout_marginStart="244.65dp"
+                android:layout_marginTop="41.64dp"
+                android:contentDescription="vector_ek22"
+                android:src="@drawable/vector_ek22"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek23"
+                android:layout_width="9.11dp"
+                android:layout_height="9.11dp"
+                android:layout_marginStart="159.57dp"
+                android:layout_marginTop="27.69dp"
+                android:contentDescription="vector_ek23"
+                android:src="@drawable/vector_ek23"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek24"
+                android:layout_width="9.11dp"
+                android:layout_height="9.11dp"
+                android:layout_marginStart="190.87dp"
+                android:layout_marginTop="27.69dp"
+                android:contentDescription="vector_ek24"
+                android:src="@drawable/vector_ek24"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek25"
+                android:layout_width="9.11dp"
+                android:layout_height="9.11dp"
+                android:layout_marginStart="222.16dp"
+                android:layout_marginTop="27.69dp"
+                android:contentDescription="vector_ek25"
+                android:src="@drawable/vector_ek25"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+            <ImageView
+                android:id="@+id/vector_ek26"
+                android:layout_width="9.11dp"
+                android:layout_height="9.11dp"
+                android:layout_marginStart="253.45dp"
+                android:layout_marginTop="27.69dp"
+                android:contentDescription="vector_ek26"
+                android:src="@drawable/vector_ek26"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ellipse_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="ellipse_1"
+            android:src="@drawable/ellipse_1"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ellipse_2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="ellipse_2"
+            android:src="@drawable/ellipse_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

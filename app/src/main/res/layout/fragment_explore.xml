@@ -5,7 +5,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/white"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".fragments.ExploreFragment">
+
+    <LinearLayout
+        android:id="@+id/topbackground"
+        android:background="@drawable/top_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="77dp">
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textview_Explore"
@@ -22,7 +36,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topbackground"
         tools:ignore="MissingConstraints" />
 
     <ImageButton

@@ -90,7 +90,9 @@ class PhoneNumberScreen : AppCompatActivity() {
                 finish()
             }
         }
+
     }
+
     private fun login() {
         number = mobileno.text.trim().toString()
 
@@ -115,5 +117,14 @@ class PhoneNumberScreen : AppCompatActivity() {
             .build()
         PhoneAuthProvider.verifyPhoneNumber(options)
         Log.d("GFG" , "Auth started")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser!=null)
+        {
+            startActivity(Intent(this,MainActivity::class.java))
+
+        }
     }
 }

@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
+import com.metafisa.myanubhav.fragments.HomeFragment
 import java.util.concurrent.TimeUnit
 
 class OtpScreen : AppCompatActivity() {
@@ -66,14 +67,16 @@ class OtpScreen : AppCompatActivity() {
                             progressBar?.setVisibility(View.GONE)
                             btnsubmit?.setVisibility(View.VISIBLE)
                             if (task.isSuccessful) {
-                                val intent = Intent(applicationContext, MainActivity::class.java)
-                                intent.flags =
-                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                val intent = Intent(applicationContext, HomeFragment::class.java)
+                                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                Toast.makeText(this@OtpScreen,"Authentication Successfully",Toast.LENGTH_SHORT).show()
                                 startActivity(intent)
-                            } else {
+                            }
+                            else
+                            {
                                 Toast.makeText(
                                     this@OtpScreen,
-                                    "Enter corrent OTP",
+                                    "Please Enter a valid OTP",
                                     Toast.LENGTH_SHORT
                                 )
                                     .show()

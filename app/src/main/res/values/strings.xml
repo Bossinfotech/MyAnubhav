@@ -3,33 +3,14 @@
     <!-- login_screen strings -->
 
     <string name="app_name">MyAnubhav</string>
-    <string name="ek_img_content">ExportKit Image</string>
-    <string name="continue_via_phone_string">Continue via Phone</string>
-    <string name="google_string">Google</string>
-    <string name="by_continuing_you_accept_our_privacy_policy_and_t_c_string">By continuing,you accept our Privacy Policy and T&amp;C</string>
-    <string name="login_for_personalised_experience_string">Login for personalised experience</string>
-    <string name="linkedln_string">Linkedln</string>
-    <string name="myanubhav_string">MyAnubHav</string>
 
     <!-- phone_number__screen strings -->
-    <string name="mobile_string">Mobile</string>
-    <string name="enter_your_phone_number_string">Enter Your Phone Number</string>
     <string name="we_will_send_you_the_6_digit_verification_code_string">We will send you the 6-digit verification code</string>
     <string name="generate_otp_string">GENERATE OTP</string>
-    <string name="_8103910578_string">8103910578</string>
-    <string name="__91_string">+91</string>
 
     <!-- otp__screen strings -->
     <string name="otp_verification_string">OTP Verification</string>
-    <string name="enter_the_otp_sent_to__91_810391057_string">Enter the OTP sent</string>
     <string name="verify___continue_string">VERIFY &amp; CONTINUE</string>
-    <string name="didn_t_receive_the_otp__resend_string">Didnt receive the OTP? RESEND</string>
-    <string name="_7_string">7</string>
-    <string name="_8_string">8</string>
-    <string name="_6_string">6</string>
-    <string name="_9_string">9</string>
-    <string name="_4_string">4</string>
-    <string name="_2_string">2</string>
 
     <!-- company review__screen strings -->
     <string name="search_ncompany_review_rating"><![CDATA[Search Company Review & Rating]]></string>
@@ -42,7 +23,6 @@
     <string name="rewards">Rewards</string>
     <string name="profile">Profile</string>
 
-    <string name="explore_activity">Explore_Activity</string>
     <string name="ace_your_next_ninterview">ACE YOUR NEXT\nINTERVIEW !</string>
     <string name="place_your_next_interview_with_nmy_anubhav">Place your next interview with\nMyAnubhav</string>
     <string name="india_s_1_interview_platform_with_47k_companies">India ‘s #1 interview platform with 47K+ Companies</string>
@@ -203,7 +183,6 @@
     <string name="rate_a_salary">Rate your company</string>
     <string name="companies_you_follow">Companies you follow</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="edit_your_profile_details">Edit your profile details</string>
     <string name="quotes">Are you a student or working professional?</string>
     <string name="student_never_worked">Student/Never worked</string>
@@ -334,4 +313,50 @@
     <string name="step_3">Step 3</string>
     <string name="redeem_myanubhav_coins_against_an_exciting_list_of_rewards_curated_for_you">Redeem MyAnubhav Coins against an exciting\nlist of rewards curated for you.</string>
     <string name="share_the_goodness">Share the Goodness!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Hint1">Departments</string>
+    <string name="_19_5_lpa">₹ 19.5 Lpa</string>
+    <string name="_12_7_97_lpa">(₹12.7 - ₹97)Lpa</string>
+    <string name="accounting_finance">Accounting/Finance</string>
+    <string name="analytics_amp_business_intelligence"><![CDATA[Analytics & Business Intelligence]]></string>
+    <string name="banking_insurance">Banking/Insurance</string>
+    <string name="construction">Construction</string>
+    <string name="tv_flims">TV_Flims</string>
+    <string name="travel">Travel</string>
+    <string name="supply_chain">Supply Chain</string>
+    <string name="discover_best_job_to_board">Discover best job to Board !</string>
+    <string name="enter_the_6_digit_otp">Enter the 6 Digit OTP</string>
+    <string name="chennai">Chennai</string>
+    <string name="bengaluru">Bengaluru</string>
+    <string name="hyderabad">Hyderabad</string>
+    <string name="mumbai">Mumbai</string>
+    <string name="jaipur">Jaipur</string>
+    <string name="departments">Departments</string>
+    <string name="deputy_manager">Deputy Manager</string>
+    <string name="customer_care_executive">Customer Care Executive</string>
+    <string name="project_engineer">Project Engineer</string>
+    <string name="google">Google</string>
+    <string name="software_testing_networking">Software/Testing/Networking</string>
+    <string name="security_service">Security Service</string>
+    <string name="sales">Sales</string>
+    <string name="r_amp_d"><![CDATA[R&D]]></string>
+    <string name="pharma_healthcare">Pharma/Healthcare</string>
+    <string name="markteting">Markteting</string>
+    <string name="manufacturing">Manufacturing</string>
+    <string name="legal">Legal</string>
+    <string name="it_hardware_amp_telecom"><![CDATA[IT Hardware & Telecom]]></string>
+    <string name="import_amp_export"><![CDATA[Import & Export]]></string>
+    <string name="hr_amp_admin"><![CDATA[HR & Admin]]></string>
+    <string name="hospitality">Hospitality</string>
+    <string name="fashin_amp_merchandising"><![CDATA[Fashin & Merchandising]]></string>
+    <string name="education">Education</string>
+    <string name="design">Design</string>
+    <string name="customer_service_amp_operations"><![CDATA[Customer Service & Operations]]></string>
+    <string name="content">Content</string>
+    <string name="architecture_amp_interior_design"><![CDATA[Architecture & Interior Design]]></string>
+    <string name="get_relevant_salary_results_by_selecting_nyour_department">Get relevant salary results by selecting\nyour Department</string>
+    <string name="_1_2_yrs_exp">1-2 yrs exp</string>
+    <string name="arcesium">Arcesium</string>
+    <string name="paypal">Paypal</string>
 </resources>

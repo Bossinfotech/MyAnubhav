@@ -21,6 +21,7 @@
             tools:ignore="UseCompoundDrawables">
 
             <TextView
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -181,7 +182,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
@@ -255,7 +257,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
@@ -818,7 +821,8 @@
                     android:background="@drawable/radio_bg"
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
-                    android:layout_marginEnd="20dp">
+                    android:layout_marginEnd="20dp"
+                    tools:ignore="TooManyViews">
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

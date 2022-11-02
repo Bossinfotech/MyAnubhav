@@ -106,7 +106,7 @@
             android:id="@+id/readMore"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter"
+
             android:text="@string/click_to_read_more"
             android:textColor="@color/rectangle_1_color"
             android:textSize="13sp"

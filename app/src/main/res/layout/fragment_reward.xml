@@ -10,13 +10,27 @@
         android:layout_height="wrap_content"
         tools:context=".fragments.RewardFragment">
 
+        <LinearLayout
+
+            android:id="@+id/topbackground"
+            android:background="@drawable/top_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-2dp"
+            android:layout_height="77dp">
+
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/backgr1"
             android:layout_width="match_parent"
             android:layout_height="310dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topbackground"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -29,7 +43,7 @@
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
         <TextView
             android:id="@+id/helperMsg"

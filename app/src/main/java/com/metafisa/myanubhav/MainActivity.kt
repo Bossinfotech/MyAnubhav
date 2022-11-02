@@ -1,6 +1,6 @@
 package com.metafisa.myanubhav
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,6 +11,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.metafisa.myanubhav.fragments.ExploreFragment
 import com.metafisa.myanubhav.fragments.HomeFragment
 import com.metafisa.myanubhav.fragments.RewardFragment
+import com.metafisa.myanubhav.fragments.UserProfileFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val exploreFragment = ExploreFragment()
     private val homeFragment = HomeFragment()
     private val rewardFragment = RewardFragment()
+    private val userProfileFragment=UserProfileFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,18 +35,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.explore -> replaceFragment(exploreFragment)
                 R.id.home -> replaceFragment(homeFragment)
                 R.id.contribute -> replaceActivity()
-                R.id.profile -> replaceActivityProfile()
+                R.id.profile -> replaceFragment(userProfileFragment)
                 R.id.reward -> replaceFragment(rewardFragment)
 
             }
             true
         }
 
-    }
-
-    private fun replaceActivityProfile() {
-       val intent = Intent(this,UserProfile::class.java)
-        startActivity(intent)
     }
 
     private fun replaceActivity() {

@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/cmpnyrevbg">
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topbackground"
+        android:background="@drawable/top_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="77dp">
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/titleOfSearch"
@@ -19,7 +31,7 @@
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topbackground"/>
 
     <TextView
         android:id="@+id/readWhatSay"
@@ -27,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/inter_thin"
+
         android:text="@string/read_what_employees_are_saying_about"
         android:textColor="@color/black"
         android:textSize="13sp"
@@ -37,14 +49,15 @@
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/searchview_bg"
-        app:iconifiedByDefault="false"
+        android:iconifiedByDefault="false"
+        android:padding="2dp"
+        android:queryBackground="@android:color/transparent"
         app:queryHint="Search company or designation"
         app:layout_constraintTop_toBottomOf="@id/readWhatSay"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +79,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -99,19 +114,21 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="83dp"
-                                android:src="@drawable/delhipng" />
+                                android:src="@drawable/delhipng"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
                                 android:text="Delhi"
-                                android:textSize="12sp" />
+                                android:textSize="12sp"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -126,18 +143,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="81dp"
                                 android:layout_height="88dp"
-                                android:src="@drawable/chennai" />
+                                android:src="@drawable/chennai"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:text="Chennai"
+                                android:text="@string/chennai"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
@@ -153,18 +171,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="89dp"
-                                android:src="@drawable/hyderabad" />
+                                android:src="@drawable/hyderabad"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:text="Hyderabad"
+                                android:text="@string/hyderabad"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
@@ -180,18 +199,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="89dp"
-                                android:src="@drawable/jaipur" />
+                                android:src="@drawable/jaipur"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:text="Jaipur"
+                                android:text="@string/jaipur"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
@@ -207,18 +227,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="89dp"
-                                android:src="@drawable/mumbaipng" />
+                                android:src="@drawable/mumbaipng"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:text="Mumbai"
+                                android:text="@string/mumbai"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
@@ -234,18 +255,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_horizontal"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="89dp"
-                                android:src="@drawable/bangaloredemo" />
+                                android:src="@drawable/bangaloredemo"
+                                tools:ignore="ContentDescription" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:text="Bengaluru"
+                                android:text="@string/bengaluru"
                                 android:textSize="13sp" />
 
                         </LinearLayout>

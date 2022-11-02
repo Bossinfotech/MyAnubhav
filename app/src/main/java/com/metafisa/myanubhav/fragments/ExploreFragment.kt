@@ -7,17 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import androidx.activity.OnBackPressedCallback
-import androidx.core.os.trace
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.fragment.findNavController
 import com.metafisa.myanubhav.CompanyReview
-import com.metafisa.myanubhav.MainActivity
 import com.metafisa.myanubhav.R
-import com.metafisa.myanubhav.fragments.SalaryCalculatorFragment
 
+@Suppress("NAME_SHADOWING")
 class ExploreFragment : Fragment() {
 
       @SuppressLint("UseRequireInsteadOfGet")
@@ -51,7 +45,7 @@ class ExploreFragment : Fragment() {
 
           salary.setOnClickListener {
 
-              val salaryFragment = SalaryFragment()
+              val salaryFragment = SalariesFragment()
               val transaction = activity!!.supportFragmentManager.beginTransaction()
               transaction.replace(R.id.container,salaryFragment)
               transaction.commit()

@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/topbackground"
+        android:background="@drawable/top_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-2dp"
+        android:layout_height="77dp">
+
+    </LinearLayout>
+
+
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="157dp"
@@ -14,13 +28,10 @@
         android:layout_marginEnd="44dp"
         android:backgroundTint="#00FFE2"
         android:backgroundTintMode="multiply"
-
         android:text="@string/new_tax_regime"
-
-
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
     <TextView
         android:id="@+id/textView2"
@@ -38,13 +49,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="399dp"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:autofillHints=""
         android:backgroundTint="#2E2E2E"
         android:backgroundTintMode="src_atop"
@@ -59,19 +72,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="398dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="520dp"
         android:autofillHints=""
         android:backgroundTint="#00FFE2"
         android:backgroundTintMode="multiply"
         android:ems="10"
         android:hint="@string/designation"
         android:inputType="textPersonName"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,19 +91,16 @@
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
-        android:layout_width="400dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="448dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:autofillHints=""
         android:backgroundTint="#00E3CF"
         android:backgroundTintMode="multiply"
         android:ems="10"
         android:hint="@string/annual_ctc"
         android:inputType="numberDecimal"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,20 +109,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="398dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:autofillHints=""
-
         android:backgroundTint="#00F6FF"
         android:backgroundTintMode="multiply"
         android:ems="10"
         android:hint="@string/experience_in_years"
         android:inputType="textPersonName"
         android:textColorHint="#757575"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,12 +133,11 @@
         android:backgroundTint="#00E2F6"
         android:backgroundTintMode="multiply"
         android:text="@string/old_tax_regime"
-
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
     <TextView
         android:id="@+id/textView3"
@@ -145,7 +149,6 @@
         android:text="@string/select_tax_regime"
         android:textColor="#000000"
         app:drawableRightCompat="@drawable/ic_baseline_info_24"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +163,6 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:text="@string/calculate"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

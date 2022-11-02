@@ -8,29 +8,27 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="2dp">
 
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="452dp"
-        android:layout_height="166dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/topbackground"
+        android:background="@drawable/top_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rectangle"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-5dp"
+        android:layout_height="180dp">
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/discovertext"
         android:layout_width="321dp"
         android:layout_height="32dp"
         android:fontFamily="@font/baloo_2_medium"
         android:gravity="center_horizontal"
-        android:text="Discover best job to Board !"
+        android:text="@string/discover_best_job_to_board"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,90 +38,69 @@
         app:layout_constraintVertical_bias="0.057"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="321dp"
-        android:layout_height="45dp"
-        android:background="@drawable/rectangular"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/jobsearchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/searchview_white_background"
+        android:iconifiedByDefault="false"
+        android:padding="2dp"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search by Company or Designation"
+        app:layout_constraintTop_toBottomOf="@+id/discovertext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
-        app:srcCompat="@drawable/search" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="238dp"
-        android:layout_height="32dp"
-        android:text="Search by company or Designation"
-        android:textColor="#CCCCCC"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageView2"
         android:layout_width="382dp"
         android:layout_height="100dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/companyreview"
         app:srcCompat="@drawable/box1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="382dp"
         android:layout_height="100dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/box1" />
+        app:srcCompat="@drawable/box1"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageView4"
         android:layout_width="382dp"
         android:layout_height="100dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/box1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="382dp"
         android:layout_height="100dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:srcCompat="@drawable/box1" />
+        app:srcCompat="@drawable/box1"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageView7"
@@ -136,7 +113,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.652"
         app:srcCompat="@drawable/swipe_right"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -148,7 +125,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.621"
-        app:srcCompat="@drawable/swipe_right" />
+        app:srcCompat="@drawable/swipe_right"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -160,7 +138,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.55"
-        app:srcCompat="@drawable/swipe_right" />
+        app:srcCompat="@drawable/swipe_right"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -172,44 +151,48 @@
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.402"
-        app:srcCompat="@drawable/swipe_right" />
+        app:srcCompat="@drawable/swipe_right"
+        tools:ignore="ContentDescription" />
     <TextView
         android:id="@+id/textView11"
         android:layout_width="188dp"
         android:layout_height="20dp"
         android:layout_marginTop="15dp"
+        android:textStyle="bold"
         android:fontFamily="@font/baloo_2_medium"
         android:text="Interview preparation"
         android:textColor="#423A3A"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/companyreview"
+        android:textStyle="bold"
         android:layout_width="213dp"
         android:layout_height="20dp"
         android:layout_marginTop="9dp"
-        android:fontFamily="@font/baloo_2_medium"
+        android:fontFamily="@font/poppins"
         android:text="Company Review"
         android:textColor="#423A3A"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="174dp"
         android:layout_height="20dp"
         android:layout_marginTop="12dp"
+        android:textStyle="bold"
         android:fontFamily="@font/baloo_2_medium"
         android:text="Latest Jobs"
         android:textColor="#423A3A"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
@@ -221,9 +204,10 @@
         android:layout_height="19dp"
         android:layout_marginTop="17dp"
         android:fontFamily="@font/baloo_2_medium"
+        android:textStyle="bold"
         android:text="Salary Description"
         android:textColor="#423A3A"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"

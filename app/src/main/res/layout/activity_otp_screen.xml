@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Enter the 6 Digit OTP"
+        android:text="@string/enter_the_6_digit_otp"
         android:textColor="@color/otp_verification_color"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,11 +54,12 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal">
+
         <EditText
-            android:background="@drawable/backgroundbox"
-            android:layout_width="40dp"
-            android:layout_height="46dp"
             android:id="@+id/inputotp1"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:background="@drawable/backgroundbox"
             android:gravity="center"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -67,15 +68,15 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="Lable1For"/>
+            tools:ignore="Lable1For,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <EditText
-            android:background="@drawable/backgroundbox"
-            android:layout_width="40dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:id="@+id/inputotp2"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/backgroundbox"
             android:gravity="center"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -84,15 +85,15 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="Lable1For"/>
+            tools:ignore="Lable1For,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
-            android:background="@drawable/backgroundbox"
-            android:layout_width="40dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:id="@+id/inputotp3"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/backgroundbox"
             android:gravity="center"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -101,15 +102,15 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="Lable1For"/>
+            tools:ignore="Lable1For,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <EditText
-            android:background="@drawable/backgroundbox"
-            android:layout_width="40dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:id="@+id/inputotp4"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/backgroundbox"
             android:gravity="center"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -118,32 +119,15 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="Lable1For"/>
+            tools:ignore="Lable1For,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
-            android:background="@drawable/backgroundbox"
-            android:layout_width="40dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:id="@+id/inputotp5"
-            android:gravity="center"
-            android:imeOptions="actionNext"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:maxLength="1"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="Lable1For"/>
-
-        <EditText
-            android:background="@drawable/backgroundbox"
             android:layout_width="40dp"
             android:layout_height="46dp"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
-            android:id="@+id/inputotp6"
+            android:background="@drawable/backgroundbox"
             android:gravity="center"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -152,7 +136,24 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="Lable1For"/>
+            tools:ignore="Lable1For,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/inputotp6"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="Lable1For,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -173,16 +174,18 @@
             android:text="Did't recive OTP ?"
             android:textSize="14sp"
             android:textColor="@color/black" />
+
         <TextView
+            android:id="@+id/sendotp_again"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:text="Send again"
             android:textColor="#04AEC4"
-            android:textStyle="bold"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:textSize="15sp"
-            android:id="@+id/sendotp_again"/>
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
 
 
     </LinearLayout>
@@ -237,7 +240,8 @@
                 android:contentDescription="vector_ek3"
                 android:src="@drawable/v3"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek4"
@@ -292,7 +296,8 @@
                 android:contentDescription="vector_ek8"
                 android:src="@drawable/vector_ek8"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek9"
@@ -314,7 +319,8 @@
                 android:contentDescription="vector_ek10"
                 android:src="@drawable/vector_ek10"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek11"
@@ -336,7 +342,8 @@
                 android:contentDescription="vector_ek12"
                 android:src="@drawable/vector_ek12"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek13"
@@ -347,7 +354,8 @@
                 android:contentDescription="vector_ek13"
                 android:src="@drawable/vector_ek13"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/ab6171fa_7d69_4734_b81c_8dff60f9761b"
@@ -392,7 +400,8 @@
                 android:contentDescription="vector_ek16"
                 android:src="@drawable/vector_ek16"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek17"
@@ -404,18 +413,19 @@
                 android:contentDescription="vector_ek17"
                 android:src="@drawable/vector_ek17"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek18"
                 android:layout_width="16.93dp"
                 android:layout_height="29.97dp"
                 android:layout_marginStart="35.9dp"
-                android:layout_marginTop="0dp"
                 android:contentDescription="vector_ek18"
                 android:src="@drawable/vector_ek18"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek19"
@@ -459,7 +469,8 @@
                 android:contentDescription="vector_ek22"
                 android:src="@drawable/vector_ek22"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek23"
@@ -470,7 +481,8 @@
                 android:contentDescription="vector_ek23"
                 android:src="@drawable/vector_ek23"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek24"
@@ -481,7 +493,8 @@
                 android:contentDescription="vector_ek24"
                 android:src="@drawable/vector_ek24"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek25"
@@ -492,7 +505,8 @@
                 android:contentDescription="vector_ek25"
                 android:src="@drawable/vector_ek25"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/vector_ek26"
@@ -503,7 +517,8 @@
                 android:contentDescription="vector_ek26"
                 android:src="@drawable/vector_ek26"
                 app:layout_constraintStart_toStartOf="@id/forgot_password_re_hxwm_1"
-                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1" />
+                app:layout_constraintTop_toTopOf="@+id/forgot_password_re_hxwm_1"
+                tools:ignore="ImageContrastCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -512,22 +527,24 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="ellipse_1"
-            android:src="@drawable/ellipse_1"
             android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ellipse_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/ellipse_2"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="ellipse_2"
-            android:src="@drawable/ellipse_2" />
+            android:scaleType="fitXY"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".fragments.SalariesFragment">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,7 +23,6 @@
             android:layout_marginTop="-2dp"
             android:layout_height="77dp">
         </LinearLayout>
-
 
         <TextView
             android:id="@+id/SearchText"

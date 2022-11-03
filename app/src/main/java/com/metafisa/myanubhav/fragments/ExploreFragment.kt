@@ -20,7 +20,7 @@ class ExploreFragment : Fragment() {
         savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
 
-        val v = inflater.inflate(R.layout.fragment_explore, container, false)
+         val v = inflater.inflate(R.layout.fragment_explore, container, false)
 
           val interviewPrep = v.findViewById<ImageButton>(R.id.interviewPreparation)
 

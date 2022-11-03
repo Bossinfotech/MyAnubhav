@@ -58,7 +58,7 @@
         android:iconifiedByDefault="false"
         android:padding="2dp"
         android:queryBackground="@android:color/transparent"
-        app:queryHint="Search company or designation"
+        android:queryHint="Search company or designation"
         app:layout_constraintTop_toBottomOf="@id/readWhatSay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

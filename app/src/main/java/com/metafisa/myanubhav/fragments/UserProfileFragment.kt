@@ -45,7 +45,7 @@ class UserProfileFragment : Fragment() {
         val rateYourCompany : TextView = v.findViewById(R.id.rateYourCompany)
         rateYourCompany.setOnClickListener {
 
-            val intent=Intent(this@UserProfileFragment.requireContext(),rateYourCompany::class.java)
+            val intent=Intent(this@UserProfileFragment.requireContext(),RateYourCompany::class.java)
             startActivity(intent)
 
         }

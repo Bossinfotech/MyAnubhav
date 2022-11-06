@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.metafisa.myanubhav.CompanyReview
-import com.metafisa.myanubhav.R
-import com.metafisa.myanubhav.RateYourCompany
+import com.metafisa.myanubhav.*
 
 class RewardFragment : Fragment() {
 
@@ -21,15 +19,28 @@ class RewardFragment : Fragment() {
         val v= inflater.inflate(R.layout.fragment_reward, container, false)
 
 
-        val writeReview=v.findViewById<TextView>(R.id.write_reviewbtn)
+        val writeCompanyReview=v.findViewById<TextView>(R.id.write_reviewbtn)
+        val contributeSalary=v.findViewById<TextView>(R.id.contribute_salarybtn)
+        val shareInterviewTips=v.findViewById<TextView>(R.id.shareinterviewtips_btn)
 
-        writeReview.setOnClickListener{
+        writeCompanyReview.setOnClickListener{
 
            val i=Intent(this@RewardFragment.requireContext(),RateYourCompany::class.java)
            startActivity(i)
-
-
         }
+
+        contributeSalary.setOnClickListener{
+
+            val i=Intent(this@RewardFragment.requireContext(),SubmitSalaries::class.java)
+            startActivity(i)
+        }
+
+        shareInterviewTips.setOnClickListener{
+
+            val i=Intent(this@RewardFragment.requireContext(),InterviewExperience::class.java)
+            startActivity(i)
+        }
+
         return v
     }
 }

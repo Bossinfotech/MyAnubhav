@@ -1251,7 +1251,7 @@
                     app:layout_constraintTop_toBottomOf="@id/shareInAdvice" />
 
                 <TextView
-                    android:id="@+id/share_interviewbtn"
+                    android:id="@+id/shareinterviewtips_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"

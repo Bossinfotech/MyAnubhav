@@ -186,7 +186,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton"
@@ -309,7 +309,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton2"
@@ -432,7 +432,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton3"
@@ -556,7 +556,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton4"
@@ -680,7 +680,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton5"
@@ -804,7 +804,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton6"
@@ -928,7 +928,7 @@
                     android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:background="@drawable/arrow_image"/>
+                    android:background="@drawable/right_arrow"/>
 
                 <Button
                     android:id="@+id/cardButton7"
@@ -1112,7 +1112,7 @@
                     android:id="@+id/write_reviewbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
                     android:text="@string/arrow"
                     android:fontFamily="@font/inter_regular"
@@ -1183,7 +1183,7 @@
                     android:id="@+id/contribute_salarybtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
                     android:text="@string/arrow"
                     android:fontFamily="@font/inter_regular"
@@ -1254,7 +1254,7 @@
                     android:id="@+id/share_interviewbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
                     android:text="@string/arrow"
                     android:textStyle="bold"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InterviewExperience">
+    tools:context=".RateYourCompany">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,6 @@
             tools:ignore="UseCompoundDrawables">
 
             <TextView
-
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -34,7 +33,7 @@
                 android:text="@string/rating_details"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                tools:ignore="NestedWeights" />
+                tools:ignore="NestedWeights,TextContrastCheck" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -78,7 +77,7 @@
                     android:textColorHint="#757575"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -106,7 +105,7 @@
                     android:textColorHint="#757575"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -135,16 +134,18 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="15dp">
+
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yes"
-                        android:textSize="15sp"
-                        android:padding="10dp"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
                         android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/blue_900"
+                        android:textSize="15sp"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
                 </RadioGroup>
 
                 <RadioGroup
@@ -154,16 +155,18 @@
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="20dp">
+
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/no"
-                        android:textSize="15sp"
-                        android:padding="10dp"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
                         android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="10dp"
+                        android:text="@string/no"
+                        android:textColor="@color/blue_900"
+                        android:textSize="15sp"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -206,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:inputType="none"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -230,7 +233,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:inputType="none"
-                        tools:ignore="LabelFor" />
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
@@ -280,7 +283,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:inputType="none"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -294,8 +297,7 @@
                         app:hintTextColor="@color/indigo_A200"
                         android:layout_weight="1"
                         app:shapeAppearanceOverlay="@style/Button4"
-                        android:layout_marginTop="15dp"
-                        >
+                        android:layout_marginTop="15dp">
 
                         <AutoCompleteTextView
                             android:id="@+id/select_year1"
@@ -303,7 +305,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:inputType="none"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -335,9 +337,9 @@
             <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="15dp">
-            </RatingBar>
+                tools:ignore="SpeakableTextPresentCheck"></RatingBar>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -354,8 +356,10 @@
             <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="15dp">
+                tools:ignore="SpeakableTextPresentCheck">
+
             </RatingBar>
 
             <TextView

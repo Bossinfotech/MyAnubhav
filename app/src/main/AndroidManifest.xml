@@ -25,10 +25,7 @@
         </activity>
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false">
-
-        </activity>
-
+            android:exported="false"/>
         <activity
             android:name=".CompanyReview"
             android:exported="false" />

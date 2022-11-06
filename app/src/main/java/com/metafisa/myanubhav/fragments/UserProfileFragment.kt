@@ -7,10 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.metafisa.myanubhav.InterviewExperience
-import com.metafisa.myanubhav.R
-import com.metafisa.myanubhav.RateYourCompany
-import com.metafisa.myanubhav.SubmitSalaries
+import com.metafisa.myanubhav.*
+
 class UserProfileFragment : Fragment() {
 
     override fun onCreateView(
@@ -32,14 +30,14 @@ class UserProfileFragment : Fragment() {
         val interviewQuestion : TextView =v.findViewById(R.id.interview_question)
         interviewQuestion.setOnClickListener {
 
-            val intent=Intent(context,InterviewExperience::class.java)
+            val intent=Intent(this@UserProfileFragment.requireContext(),InterviewExperience::class.java)
             startActivity(intent)
         }
 
         val submitSalary : TextView =v.findViewById(R.id.submitSalary)
         submitSalary.setOnClickListener {
 
-            val intent=Intent(context,SubmitSalaries::class.java)
+            val intent=Intent(this@UserProfileFragment.requireContext(),SubmitSalaries::class.java)
             startActivity(intent)
 
         }
@@ -47,7 +45,7 @@ class UserProfileFragment : Fragment() {
         val rateYourCompany : TextView = v.findViewById(R.id.rateYourCompany)
         rateYourCompany.setOnClickListener {
 
-            val intent=Intent(context,RateYourCompany::class.java)
+            val intent=Intent(this@UserProfileFragment.requireContext(),rateYourCompany::class.java)
             startActivity(intent)
 
         }

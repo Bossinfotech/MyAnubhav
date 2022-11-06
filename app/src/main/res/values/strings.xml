@@ -359,4 +359,8 @@
     <string name="_1_2_yrs_exp">1-2 yrs exp</string>
     <string name="arcesium">Arcesium</string>
     <string name="paypal">Paypal</string>
+    <string name="interview_preparation">Interview preparation</string>
+    <string name="company_review">Company Review</string>
+    <string name="latest_jobs">Latest Jobs</string>
+    <string name="salary_description">Salary Description</string>
 </resources>

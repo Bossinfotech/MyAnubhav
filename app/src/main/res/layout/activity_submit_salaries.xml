@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InterviewExperience">
+    tools:context=".SubmitSalaries">
 
     <LinearLayout
         android:layout_width="match_parent"

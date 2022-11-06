@@ -33,9 +33,6 @@
             android:name=".CompanyReview"
             android:exported="false" />
         <activity
-            android:name=".UserProfile"
-            android:exported="false" />
-        <activity
             android:name=".RateYourCompany"
             android:exported="false" />
         <activity

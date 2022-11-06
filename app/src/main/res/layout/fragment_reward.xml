@@ -134,7 +134,7 @@
 
                 <ImageView
                     android:layout_width="75dp"
-                    android:layout_height="30dp"
+                    android:layout_height="38dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="30dp"
                     android:src="@drawable/discount_bg"
@@ -145,7 +145,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="22dp"
                     android:layout_marginEnd="40dp"
                     android:text="80%\nDiscount"
                     android:textColor="@color/white"

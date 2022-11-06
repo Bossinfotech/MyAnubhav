@@ -363,4 +363,10 @@
     <string name="company_review">Company Review</string>
     <string name="latest_jobs">Latest Jobs</string>
     <string name="salary_description">Salary Description</string>
+    <string name="type_in_your_suggestions">Type in your suggestions</string>
+    <string name="_80_ndiscount">80%\nDiscount</string>
+    <string name="coding_nninjas">Coding\nNinjas</string>
+    <string name="claim_for_50_coins">Claim for 50 Coins</string>
+    <string name="share_interview_tips">Share Interview Tips</string>
+    <string name="switching_from_service_to_nproduct_companies_could">Switching from Service to\nProduct companies could...</string>
 </resources>

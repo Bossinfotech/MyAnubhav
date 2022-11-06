@@ -57,7 +57,6 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
-                app:shapeAppearanceOverlay="@style/Button4"
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -198,7 +197,6 @@
                     app:boxStrokeWidth="1dp"
                     android:hint="@string/select_month"
                     app:hintTextColor="@color/indigo_A200"
-                    app:shapeAppearanceOverlay="@style/Button4"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     >
@@ -223,7 +221,6 @@
                     android:hint="@string/select_year"
                     app:hintTextColor="@color/indigo_A200"
                     android:layout_weight="1"
-                    app:shapeAppearanceOverlay="@style/Button4"
                     android:layout_marginTop="15dp"
                     >
 
@@ -272,7 +269,6 @@
                         app:boxStrokeWidth="1dp"
                         android:hint="@string/select_month"
                         app:hintTextColor="@color/indigo_A200"
-                        app:shapeAppearanceOverlay="@style/Button4"
                         android:layout_weight="1"
                         android:layout_marginTop="15dp"
                         >
@@ -296,7 +292,6 @@
                         android:hint="@string/select_year"
                         app:hintTextColor="@color/indigo_A200"
                         android:layout_weight="1"
-                        app:shapeAppearanceOverlay="@style/Button4"
                         android:layout_marginTop="15dp">
 
                         <AutoCompleteTextView
@@ -939,7 +934,6 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="25dp"
-                app:shapeAppearanceOverlay="@style/Button4"
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -964,7 +958,6 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
-                app:shapeAppearanceOverlay="@style/Button4"
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"

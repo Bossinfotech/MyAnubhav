@@ -20,11 +20,10 @@ class RateYourCompany : AppCompatActivity() {
         monthAutoComplete.setAdapter(monthAdapter)
         yearAutoComplete.setAdapter(yearAdapter)
 
-        // Employment ended on
-
         val monthAutoComplete1 : AutoCompleteTextView = findViewById(R.id.select_month1)
         val yearAutoComplete1 : AutoCompleteTextView = findViewById(R.id.select_year1)
         monthAutoComplete1.setAdapter(monthAdapter)
         yearAutoComplete1.setAdapter(yearAdapter)
+
     }
 }

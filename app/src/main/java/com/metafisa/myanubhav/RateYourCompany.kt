@@ -6,6 +6,8 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 
 class RateYourCompany : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rate_your_comapany)

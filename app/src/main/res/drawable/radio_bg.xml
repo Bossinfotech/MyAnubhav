@@ -5,5 +5,5 @@
         android:color="@color/indigo_50"/>
     <solid android:color="@color/indigo_60"
         />
-    <corners android:radius="5dp"/>
+    <corners android:radius="20dp"/>
 </shape>

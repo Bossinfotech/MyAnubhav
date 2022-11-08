@@ -17,7 +17,6 @@ class UserProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_user_profile, container, false)
-
         val addEmployeeDetails : TextView = v.findViewById(R.id.addEmployeeDetail)
         addEmployeeDetails.setOnClickListener {
 

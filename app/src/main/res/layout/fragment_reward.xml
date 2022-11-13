@@ -66,7 +66,7 @@
             android:background="@drawable/button_bg"
             android:text="@string/contribute_earn_coins"
             android:textAllCaps="false"
-            android:textColor="#311B92"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/helperMsg" />
@@ -198,7 +198,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textAllCaps="false"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg" />
@@ -321,7 +321,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textStyle="bold"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg2" />
@@ -444,7 +444,7 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/inter_regular"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg3" />
@@ -568,7 +568,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textStyle="bold"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg4" />
@@ -692,7 +692,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textStyle="bold"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg5" />
@@ -816,7 +816,7 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/inter_regular"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg6" />
@@ -940,7 +940,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textStyle="bold"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/couponMsg7" />
@@ -1027,7 +1027,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:textStyle="bold"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/editSuggestion"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,165 +8,139 @@
 
     <LinearLayout
         android:id="@+id/topbackground"
-        android:background="@drawable/top_background"
+        android:background="@drawable/background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_marginTop="-2dp"
-        android:layout_height="77dp">
-
-    </LinearLayout>
-
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="#00FFE2"
-        android:backgroundTintMode="multiply"
-        android:text="@string/new_tax_regime"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
+        android:layout_height="77dp"/>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="3dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/take_home_salary_calculator"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Take Home salary calculator"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/company"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:autofillHints=""
-        android:backgroundTint="#2E2E2E"
-        android:backgroundTintMode="src_atop"
-        android:ems="10"
-        android:hint="@string/companany_name"
-        android:inputType="textPersonName"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:hint="Company Name"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/des"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="13dp"
-        android:autofillHints=""
-        android:backgroundTint="#00FFE2"
-        android:backgroundTintMode="multiply"
-        android:ems="10"
-        android:hint="@string/designation"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.046" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:hint="Designation"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/annual"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:autofillHints=""
-        android:backgroundTint="#00E3CF"
-        android:backgroundTintMode="multiply"
-        android:ems="10"
-        android:hint="@string/annual_ctc"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.065" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:hint="Annual CTC"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/exp"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:autofillHints=""
-        android:backgroundTint="#00F6FF"
-        android:backgroundTintMode="multiply"
-        android:ems="10"
-        android:hint="@string/experience_in_years"
-        android:inputType="textPersonName"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:hint="Experience (in years)"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="157dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="420dp"
-        android:backgroundTint="#00E2F6"
-        android:backgroundTintMode="multiply"
-        android:text="@string/old_tax_regime"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topbackground" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="286dp"
-        android:text="@string/select_tax_regime"
-        android:textColor="#000000"
-        app:drawableRightCompat="@drawable/ic_baseline_info_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintVertical_bias="0.009" />
+        android:id="@+id/textvi"
+        android:text="Select tax regime"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/exp"/>
 
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/helpone"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@id/exp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/textvi"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="old Tax Regime"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radiotwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-50dp"
+            android:text="New Tax Regime"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="(optional for FY2022-23)" />
+
+
+    </RadioGroup>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="270dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        android:layout_marginTop="520dp"
+        android:text="calculate"
+        android:backgroundTint="@color/company_color"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

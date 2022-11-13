@@ -61,7 +61,7 @@
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/red_a200"
                 android:layout_height="wrap_content">
@@ -71,6 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -88,7 +89,7 @@
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/red_a200"
                 android:layout_height="wrap_content">
@@ -98,6 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -118,48 +120,60 @@
                 android:layout_marginTop="20dp">
             </TextView>
 
+
             <LinearLayout
+
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="15dp">
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
                 <RadioGroup
+                    android:id="@+id/currently_working_here"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/radio_bg"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="15dp">
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/yes_working"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
                         android:text="@string/yes"
-                        android:textSize="15sp"
-                        android:padding="10dp"
+                        android:paddingHorizontal="32dp"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:button="@drawable/radio_null_button"
+                        android:background="@drawable/radio_selector"/>
+
+                    <RadioButton
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/no_former_employee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
                         android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
+                        android:paddingHorizontal="32dp"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:button="@drawable/radio_null_button"
+                        android:background="@drawable/radio_selector"
+                        android:textStyle="bold"
+                        android:text="@string/no"/>
+
                 </RadioGroup>
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/radio_bg"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/no_former_employee"
-                        android:textSize="15sp"
-                        android:padding="10dp"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
-                </RadioGroup>
             </LinearLayout>
 
             <TextView
@@ -184,6 +198,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="15dp">
 
@@ -196,6 +211,7 @@
                         android:textAllCaps="false"
                         android:fontFamily="@font/poppins"
                         android:textSize="14sp"
+                        android:layout_marginBottom="2dp"
                         android:layout_marginStart="10sp"
                         android:textColor="@color/blue_gray"
                         android:background = "@drawable/button_bg"/>
@@ -243,9 +259,10 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@string/_2018"
                     android:layout_weight="1"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:fontFamily="@font/poppins"
@@ -276,13 +293,14 @@
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -300,7 +318,7 @@
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -308,6 +326,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
+                    android:background="@android:color/transparent"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
                     android:textSize="15sp"
@@ -321,17 +340,19 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 app:boxStrokeColor="@color/indigo_A200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:background="@android:color/transparent"
                 app:boxStrokeWidth="1dp"
                 android:hint="@string/total_work_experience"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:shapeAppearanceOverlay="@style/Button4"
-                android:layout_marginTop="15dp"
-                >
+                android:layout_marginTop="25dp">
 
                 <AutoCompleteTextView
                     android:id="@+id/total_experience"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:layout_weight="1"
                     android:inputType="none"
                     tools:ignore="LabelFor" />
@@ -343,14 +364,16 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 app:boxStrokeColor="@color/indigo_A200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                 app:boxStrokeWidth="1dp"
                 android:hint="@string/job_type"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:shapeAppearanceOverlay="@style/Button4"
                 android:layout_marginTop="15dp">
 
                 <AutoCompleteTextView
                     android:id="@+id/Job_type"
+                    android:background="@android:color/transparent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -371,50 +394,59 @@
             </TextView>
 
             <LinearLayout
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="15dp">
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
                 <RadioGroup
+                    android:id="@+id/gender_selection"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/radio_bg"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="15dp">
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/male"
-                        android:textSize="15sp"
-                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
                         android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
+                        android:textStyle="bold"
+                        android:text="Male"
+                        android:paddingHorizontal="25dp"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:button="@drawable/radio_null_button"
+                        android:background="@drawable/radio_selector"/>
+
+                    <RadioButton
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingHorizontal="25dp"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:button="@drawable/radio_null_button"
+                        android:background="@drawable/radio_selector"
+                        android:textStyle="bold"
+                        android:text="Female"/>
+
                 </RadioGroup>
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/radio_bg"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="20dp">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/female"
-                        android:textSize="15sp"
-                        android:padding="10dp"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/blue_900"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="15dp"/>
-                </RadioGroup>
             </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/submit"

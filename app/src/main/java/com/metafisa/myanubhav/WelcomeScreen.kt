@@ -25,7 +25,7 @@ class WelcomeScreen : AppCompatActivity() {
 
         if(restorePreData()){
 
-            val i = Intent(applicationContext, SplashScreenActivity::class.java)
+            val i = Intent(applicationContext, MainActivity::class.java)
             startActivity(i)
             finish()
 
@@ -73,14 +73,13 @@ class WelcomeScreen : AppCompatActivity() {
                 savePrefData()
                 val i = Intent(applicationContext, SplashScreenActivity::class.java)
                 startActivity(i)
-
             }
         }
 
         skip?.setOnClickListener {
 
             savePrefData()
-            val i = Intent(applicationContext, SplashScreenActivity::class.java)
+            val i = Intent(applicationContext, MainActivity::class.java)
             startActivity(i)
             finish()
 

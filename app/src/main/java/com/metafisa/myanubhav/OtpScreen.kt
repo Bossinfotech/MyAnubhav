@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.*
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import com.metafisa.myanubhav.fragments.HomeFragment
@@ -17,7 +16,7 @@ import java.util.concurrent.TimeUnit
 
 class OtpScreen : AppCompatActivity() {
 
-    var et1: EditText? = null
+    private var et1: EditText? = null
     var et2:EditText? = null
     var et3:EditText? = null
     var et4:EditText? = null
@@ -180,7 +179,7 @@ class OtpScreen : AppCompatActivity() {
             override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
                 if (!charSequence.toString().trim { it <= ' ' }.isEmpty()) {
 
-                    btnsubmit!!.requestFocus()
+                    btnsubmit!!.movementMethod
                 }
             }
             override fun afterTextChanged(editable: Editable) {}

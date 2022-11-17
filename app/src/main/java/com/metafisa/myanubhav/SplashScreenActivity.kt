@@ -14,7 +14,6 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-
         val backgroundImg : ImageView= findViewById(R.id.SplashScreenImage)
         val applicationName : TextView=findViewById(R.id.appname)
         val sideAnimation = AnimationUtils.loadAnimation(this,R.anim.slide)

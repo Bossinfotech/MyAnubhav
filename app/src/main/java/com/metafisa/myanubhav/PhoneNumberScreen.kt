@@ -24,13 +24,13 @@ class PhoneNumberScreen : AppCompatActivity() {
     private var ccp:CountryCodePicker?=null
     private var countryCode:String?=null
 
-
-    // create instance of firebase auth
     private lateinit var auth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
     private lateinit var mobileno:EditText
-    lateinit var sentotp:Button
+    private lateinit var sentotp:Button
+
     // we will use this to match the sent otp from firebase
+
     lateinit var storedVerificationId:String
     lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
     private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
@@ -78,14 +78,14 @@ class PhoneNumberScreen : AppCompatActivity() {
                 Log.d("GFG","onCodeSent: $verificationId")
                 storedVerificationId = verificationId
                 resendToken = token
-                progressBar.setVisibility(View.GONE)
+                progressBar.visibility = View.GONE
                 // Start a new activity using intent
                 // also send the storedVerificationId using intent
                 // we will use this id to send the otp back to firebase
                 val intent = Intent(applicationContext,OtpScreen::class.java)
-                intent.putExtra("storedVerificationId",storedVerificationId,)
+                intent.putExtra("storedVerificationId",storedVerificationId)
                 intent.putExtra("countrycode",countryCode)
-                intent.putExtra("mobile",mobileno.getText().toString())
+                intent.putExtra("mobile",mobileno.text.toString())
                 startActivity(intent)
                 finish()
             }
@@ -100,8 +100,8 @@ class PhoneNumberScreen : AppCompatActivity() {
         if (number.isNotEmpty()){
             number = "+$countryCode$number"
             sendVerificationCode(number)
-            progressBar.setVisibility(View.VISIBLE)
-            sentotp.setVisibility(View.INVISIBLE)
+            progressBar.visibility = View.VISIBLE
+            sentotp.visibility = View.INVISIBLE
 
         }else{
             Toast.makeText(this,"Enter a valid mobile number", Toast.LENGTH_SHORT).show()

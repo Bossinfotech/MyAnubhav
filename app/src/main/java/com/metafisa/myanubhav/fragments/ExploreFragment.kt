@@ -1,14 +1,12 @@
 package com.metafisa.myanubhav.fragments
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
-import com.metafisa.myanubhav.CompanyReview
 import com.metafisa.myanubhav.R
 
 @Suppress("NAME_SHADOWING")
@@ -52,7 +50,6 @@ class ExploreFragment : Fragment() {
           }
 
           val salaryCalculator = v.findViewById<ImageButton>(R.id.salaryCalculation)
-
           salaryCalculator.setOnClickListener {
 
               val salaryCalculatorFragment = SalaryCalculatorFragment()
@@ -61,13 +58,17 @@ class ExploreFragment : Fragment() {
               transaction.commit()
           }
 
-          val companyReview = v.findViewById<ImageButton>(R.id.companyReview)
-          companyReview.setOnClickListener {
-              val intent = Intent (this@ExploreFragment.context, CompanyReview::class.java)
-              startActivity(intent)
+          val companyReviewFragment = v.findViewById<ImageButton>(R.id.companyReview)
+
+          companyReviewFragment.setOnClickListener {
+
+              val companyReviewFragment = CompanyReviewFragment()
+              val transaction = activity!!.supportFragmentManager.beginTransaction()
+              transaction.replace(R.id.container,companyReviewFragment)
+              transaction.commit()
           }
 
           return v
-
     }
+
 }

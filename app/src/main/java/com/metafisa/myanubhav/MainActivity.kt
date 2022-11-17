@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       replaceFragmentmain(homeFragment)
+        replaceFragmentmain(homeFragment)
 
         val bottomNavinationView =findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
-
     private fun replaceActivity() {
         supportActionBar?.hide()
         val view: View =layoutInflater.inflate(R.layout.bottom_sheet,null)
@@ -46,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-
     private fun replaceFragment(fragment: Fragment)
     {
         val transaction = supportFragmentManager.beginTransaction()

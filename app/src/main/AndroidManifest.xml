@@ -27,9 +27,7 @@
         <activity
             android:name=".SplashScreenActivity"
             android:exported="false" />
-        <activity
-            android:name=".CompanyReview"
-            android:exported="false" />
+
         <activity
             android:name=".RateYourCompany"
             android:exported="false" />
@@ -44,7 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".PhoneNumberScreen"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

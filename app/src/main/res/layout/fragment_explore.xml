@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,129 +10,191 @@
 
     <LinearLayout
         android:id="@+id/topbackground"
-        android:background="@drawable/top_background"
+        android:background="@drawable/background"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="77dp">
+        android:layout_marginTop="-2dp"
+        android:layout_height="87dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@+id/topbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/wel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:text="Welcome!"/>
+
+        <TextView
+            android:id="@+id/texttwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/wel"
+            android:paddingLeft="15dp"
+            android:text="Let's Schedule your projects with MyAnubhav"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="110dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/freelanceone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/texttwo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boxtwo"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/review"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/companyreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Reviews"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boxtwo"
+        android:layout_marginTop="320dp"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/meeting"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/interviewpreparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interview Preparation"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boxtwo"
+        android:layout_marginTop="420dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/suitcase"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/latestjobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latest Jobs"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boxtwo"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/sal"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Salary"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boxtwo"
+        android:layout_marginTop="620dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/salcal"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/salarycalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary Calculator"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textview_Explore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/explore"
-        android:textColor="@color/black"
-        android:paddingStart="5dp"
-        android:paddingEnd="10dp"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topbackground"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/companyReview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:src="@drawable/company_review"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_Explore"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/interviewPreparation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:src="@drawable/interview_prep"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/companyReview"
-        app:layout_constraintTop_toBottomOf="@id/textview_Explore"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/latestJobs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:src="@drawable/latest_jobs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/companyReview"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/salaries"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:src="@drawable/salaries"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/latestJobs"
-        app:layout_constraintTop_toBottomOf="@id/interviewPreparation"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/salaryCalculation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:src="@drawable/salary_calculato"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/latestJobs"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/dummyUIPurpose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:visibility="invisible"
-        android:scaleType="fitXY"
-        android:src="@drawable/salary_calculato"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/salaries"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+</RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>

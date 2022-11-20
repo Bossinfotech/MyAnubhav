@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.metafisa.myanubhav.R
 
+
 @Suppress("NAME_SHADOWING")
+
 class ExploreFragment : Fragment() {
 
       @SuppressLint("UseRequireInsteadOfGet")
@@ -17,58 +19,60 @@ class ExploreFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-
          val v = inflater.inflate(R.layout.fragment_explore, container, false)
 
-          val interviewPrep = v.findViewById<ImageButton>(R.id.interviewPreparation)
+          val interviewPrepration : TextView=v.findViewById(R.id.interviewpreparation)
 
-          interviewPrep.setOnClickListener {
-              val interviewPreprationFragment = InterviewPreprationFragment()
-              val transaction = activity!!.supportFragmentManager.beginTransaction()
+          interviewPrepration.setOnClickListener{
+
+              val interviewPreprationFragment=InterviewPreprationFragment()
+              val transaction=requireActivity().supportFragmentManager.beginTransaction()
               transaction.replace(R.id.container,interviewPreprationFragment)
               transaction.commit()
           }
 
-          val latestJobs = v.findViewById<ImageButton>(R.id.latestJobs)
+          val companyReview:TextView=v.findViewById(R.id.companyreview)
 
-          latestJobs.setOnClickListener {
+          companyReview.setOnClickListener{
 
-              val latestJobsFragment = ExploreLatestJobsFragment()
-              val transaction = activity!!.supportFragmentManager.beginTransaction()
-              transaction.replace(R.id.container,latestJobsFragment)
-              transaction.commit()
-          }
-
-          val salary = v.findViewById<ImageButton>(R.id.salaries)
-
-          salary.setOnClickListener {
-
-              val salaryFragment = SalariesFragment()
-              val transaction = activity!!.supportFragmentManager.beginTransaction()
-              transaction.replace(R.id.container,salaryFragment)
-              transaction.commit()
-          }
-
-          val salaryCalculator = v.findViewById<ImageButton>(R.id.salaryCalculation)
-          salaryCalculator.setOnClickListener {
-
-              val salaryCalculatorFragment = SalaryCalculatorFragment()
-              val transaction = activity!!.supportFragmentManager.beginTransaction()
-              transaction.replace(R.id.container,salaryCalculatorFragment)
-              transaction.commit()
-          }
-
-          val companyReviewFragment = v.findViewById<ImageButton>(R.id.companyReview)
-
-          companyReviewFragment.setOnClickListener {
-
-              val companyReviewFragment = CompanyReviewFragment()
-              val transaction = activity!!.supportFragmentManager.beginTransaction()
+              val companyReviewFragment=CompanyReviewFragment()
+              val transaction=requireActivity().supportFragmentManager.beginTransaction()
               transaction.replace(R.id.container,companyReviewFragment)
               transaction.commit()
           }
+          val latestJobs:TextView=v.findViewById(R.id.latestjobs)
 
-          return v
+          latestJobs.setOnClickListener{
+
+              val latestJobsFragment=ExploreLatestJobsFragment()
+              val transaction=requireActivity().supportFragmentManager.beginTransaction()
+              transaction.replace(R.id.container,latestJobsFragment)
+              transaction.commit()
+
+          }
+
+          val companySalary:TextView=v.findViewById(R.id.salary)
+
+          companySalary.setOnClickListener{
+
+              val salariesFragment=SalariesFragment()
+              val transaction=requireActivity().supportFragmentManager.beginTransaction()
+              transaction.replace(R.id.container,salariesFragment)
+              transaction.commit()
+          }
+
+          val salaryCal:TextView=v.findViewById(R.id.salarycalculator)
+
+          salaryCal.setOnClickListener{
+
+              val salaryCalculatorFragment=SalaryCalculatorFragment()
+              val transaction=requireActivity().supportFragmentManager.beginTransaction()
+              transaction.replace(R.id.container,salaryCalculatorFragment)
+              transaction.commit()
+
+          }
+
+         return v
     }
 
 }

@@ -57,8 +57,9 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:shapeAppearanceOverlay="@style/Button4"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
                 app:hintTextColor="@color/company_color"
@@ -71,7 +72,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -85,8 +85,9 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:shapeAppearanceOverlay="@style/Button4"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
                 app:hintTextColor="@color/company_color"
@@ -99,7 +100,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -113,13 +113,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/currently_working_here"
                 android:textSize="17sp"
-                android:textColor="@color/blue_900"
+                android:textColor="@color/black"
                 android:fontFamily="@font/poppins"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="20dp">
             </TextView>
-
 
             <LinearLayout
 
@@ -171,7 +170,6 @@
                         android:background="@drawable/radio_selector"
                         android:textStyle="bold"
                         android:text="@string/no"/>
-
                 </RadioGroup>
 
             </LinearLayout>
@@ -282,6 +280,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="25dp">
+
             </TextView>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -289,8 +288,9 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:shapeAppearanceOverlay="@style/Button4"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
                 app:hintTextColor="@color/company_color"
@@ -300,7 +300,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:background="@android:color/transparent"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
@@ -314,6 +313,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 app:shapeAppearanceOverlay="@style/Button4"
                 app:boxStrokeColor="@color/indigo_A200"
                 app:boxStrokeWidth="1dp"
@@ -326,7 +326,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
-                    android:background="@android:color/transparent"
                     android:textColor="@color/black"
                     android:textColorHint="#757575"
                     android:textSize="15sp"
@@ -363,7 +362,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                 app:boxStrokeWidth="1dp"
                 android:hint="@string/job_type"

@@ -56,10 +56,11 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
-                app:boxStrokeColor="@color/indigo_A200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/red_a200"
                 android:layout_height="wrap_content">
@@ -68,7 +69,6 @@
                     android:id="@+id/company"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
@@ -84,11 +84,11 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
                 app:shapeAppearanceOverlay="@style/Button4"
-                app:boxStrokeColor="@color/indigo_A200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                android:background="@android:color/transparent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/red_a200"
                 android:layout_height="wrap_content">
@@ -100,7 +100,6 @@
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
-                    android:background="@android:color/transparent"
                     android:textColorHint="#757575"
                     android:textSize="15sp"
                     android:textStyle="normal"
@@ -272,11 +271,11 @@
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:layout_marginEnd="15dp"
-                        app:boxStrokeColor="@color/indigo_A200"
+                        app:boxStrokeColor="@color/company_color"
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                         app:boxStrokeWidth="1dp"
                         android:hint="@string/select_month"
-                        app:hintTextColor="@color/indigo_A200"
+                        app:hintTextColor="@color/company_color"
                         android:layout_weight="1"
                         android:layout_marginTop="15dp">
 
@@ -294,11 +293,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
-                        app:boxStrokeColor="@color/indigo_A200"
+                        app:boxStrokeColor="@color/company_color"
                         app:boxStrokeWidth="1dp"
                         android:hint="@string/select_year"
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                        app:hintTextColor="@color/indigo_A200"
+                        app:hintTextColor="@color/company_color"
                         android:layout_weight="1"
                         android:layout_marginTop="15dp">
 
@@ -506,19 +505,19 @@
                 android:hint="@string/likes"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="20dp"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/company1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
                     android:lines="4"
                     android:scrollbars="vertical"
                     android:scrollHorizontally="false"
@@ -549,14 +548,15 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="@string/dislikes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="20dp"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -565,7 +565,6 @@
                     android:lines="4"
                     android:scrollbars="vertical"
                     android:scrollHorizontally="false"
-                    android:background="@android:color/transparent"
                     android:inputType="textMultiLine"
                     android:textColor="@color/black"
                     android:gravity="top"
@@ -923,19 +922,19 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="@string/office_location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="25dp"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"
@@ -947,20 +946,19 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:hint="@string/department_e_g_sales"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
-                android:background="@android:color/transparent"
-                app:boxStrokeColor="@color/indigo_A200"
+                app:boxStrokeColor="@color/company_color"
                 app:boxStrokeWidth="1dp"
                 android:layout_width="match_parent"
-                app:hintTextColor="@color/indigo_A200"
+                app:hintTextColor="@color/company_color"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
                     android:ems="10"
                     android:inputType="textPersonName|textEmailAddress"
                     android:textColor="@color/black"

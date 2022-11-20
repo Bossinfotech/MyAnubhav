@@ -22,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
         applicationName.startAnimation(textAnimation)
 
         Handler().postDelayed({
-            startActivity(Intent(this,PhoneNumberScreen::class.java))
+            startActivity(Intent(this,WelcomeScreen::class.java))
             finish()
         },3000)
 

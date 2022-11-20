@@ -30,7 +30,6 @@ class PhoneNumberScreen : AppCompatActivity() {
     private lateinit var sentotp:Button
 
     // we will use this to match the sent otp from firebase
-
     lateinit var storedVerificationId:String
     lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
     private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks

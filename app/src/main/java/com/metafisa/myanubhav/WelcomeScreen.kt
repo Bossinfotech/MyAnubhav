@@ -25,7 +25,7 @@ class WelcomeScreen : AppCompatActivity() {
 
         if(restorePreData()){
 
-            val i = Intent(applicationContext, MainActivity::class.java)
+            val i = Intent(applicationContext, PhoneNumberScreen::class.java)
             startActivity(i)
             finish()
 
@@ -69,7 +69,7 @@ class WelcomeScreen : AppCompatActivity() {
             if (position==onBoardingData.size){
 
                 savePrefData()
-                val i = Intent(applicationContext, SplashScreenActivity::class.java)
+                val i = Intent(applicationContext, PhoneNumberScreen::class.java)
                 startActivity(i)
             }
         }

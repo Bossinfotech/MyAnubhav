@@ -36,8 +36,6 @@ class WelcomeScreen : AppCompatActivity() {
         next = findViewById(R.id.next)
         skip=findViewById(R.id.skip)
 
-
-
         val onBoardingData:MutableList<OnBoardingData> = ArrayList()
         onBoardingData.add(
             OnBoardingData("Latest Jobs",
@@ -79,7 +77,7 @@ class WelcomeScreen : AppCompatActivity() {
         skip?.setOnClickListener {
 
             savePrefData()
-            val i = Intent(applicationContext, MainActivity::class.java)
+            val i = Intent(applicationContext, PhoneNumberScreen::class.java)
             startActivity(i)
             finish()
 

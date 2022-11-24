@@ -15,7 +15,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
 
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bottom_sheet, container, false)
+        return inflater.inflate(R.layout.fragment_salary_calculator, container, false)
 
     }
 }

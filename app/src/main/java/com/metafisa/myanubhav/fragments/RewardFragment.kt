@@ -25,7 +25,7 @@ class RewardFragment : Fragment() {
 
         writeCompanyReview.setOnClickListener{
 
-           val i=Intent(this@RewardFragment.requireContext(),RateYourCompany::class.java)
+           val i=Intent(this@RewardFragment.requireContext(),RateCompanyReview::class.java)
            startActivity(i)
         }
 

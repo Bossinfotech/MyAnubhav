@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.BottomSheetFragment"
     android:orientation="vertical">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -234,7 +233,6 @@
                     android:layout_marginEnd="30sp">
 
                     <androidx.appcompat.widget.AppCompatButton
-                        style="@style/Widget.AppCompat.Button.Borderless"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="14sp"
@@ -246,19 +244,20 @@
                         android:textAllCaps="false"
                         android:textColor="@color/blue_gray"
                         android:textSize="14sp" />
+
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-                        android:text="@string/_1_yr"
+                        android:layout_marginStart="14sp"
                         android:layout_weight="1"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/_1_yr"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:fontFamily="@font/barlow_medium"
-                        android:textSize="14sp"
-                        android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:textSize="14sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -271,9 +270,7 @@
                         android:textSize="14sp"
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        />
+                        android:background = "@drawable/button_bg"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -286,8 +283,7 @@
                         android:textSize="14sp"
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:background = "@drawable/button_bg"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -311,22 +307,21 @@
                         android:textSize="14sp"
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:background = "@drawable/button_bg"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-                        android:text="@string/_5_yrs"
+                        android:layout_marginStart="14sp"
                         android:layout_weight="1"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/_5_yrs"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textSize="14sp"
-                        android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:fontFamily="@font/barlow_medium"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:textSize="14sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -339,9 +334,7 @@
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
                         android:fontFamily="@font/barlow_medium"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        />
+                        android:background = "@drawable/button_bg"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -354,8 +347,7 @@
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
                         android:background = "@drawable/button_bg"
-                        android:fontFamily="@font/barlow_medium"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:fontFamily="@font/barlow_medium"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -379,8 +371,7 @@
                         android:textSize="14sp"
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:background = "@drawable/button_bg"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -393,23 +384,21 @@
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
                         android:fontFamily="@font/barlow_medium"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:background = "@drawable/button_bg"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
                         android:layout_height="40dp"
-                        android:text="@string/_10_15_yrs"
+                        android:layout_marginStart="14sp"
                         android:layout_weight="1"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/_10_15_yrs"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textSize="11sp"
-                        android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:fontFamily="@font/barlow_medium"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"
-                        />
+                        android:textSize="11sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
@@ -422,8 +411,7 @@
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
                         android:background = "@drawable/button_bg"
-                        android:fontFamily="@font/barlow_medium"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:fontFamily="@font/barlow_medium"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -448,8 +436,7 @@
                         android:textSize="14sp"
                         android:layout_marginStart="14sp"
                         android:textColor="@color/blue_gray"
-                        android:background = "@drawable/button_bg"
-                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                        android:background = "@drawable/button_bg"/>
                 </LinearLayout>
             </LinearLayout>
 

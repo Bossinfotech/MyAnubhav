@@ -25,7 +25,6 @@ class UserProfileFragment : Fragment() {
             transaction.replace(R.id.container,bottomSheetFragment)
             transaction.commit()
         }
-
         val interviewQuestion : TextView =v.findViewById(R.id.interview_question)
         interviewQuestion.setOnClickListener {
 
@@ -44,7 +43,7 @@ class UserProfileFragment : Fragment() {
         val rateYourCompany : TextView = v.findViewById(R.id.rateYourCompany)
         rateYourCompany.setOnClickListener {
 
-            val intent=Intent(this@UserProfileFragment.requireContext(),RateYourCompany::class.java)
+            val intent=Intent(this@UserProfileFragment.requireContext(),RateCompanyReview::class.java)
             startActivity(intent)
 
         }

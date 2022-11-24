@@ -20,7 +20,6 @@ class SplashScreenActivity : AppCompatActivity() {
         val textAnimation = AnimationUtils.loadAnimation(this,R.anim.my_text)
         backgroundImg.startAnimation(sideAnimation)
         applicationName.startAnimation(textAnimation)
-
         Handler().postDelayed({
             startActivity(Intent(this,WelcomeScreen::class.java))
             finish()

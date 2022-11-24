@@ -246,7 +246,6 @@
                         android:textAllCaps="false"
                         android:textColor="@color/blue_gray"
                         android:textSize="14sp" />
-
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="0dp"
                         android:layout_height="40dp"

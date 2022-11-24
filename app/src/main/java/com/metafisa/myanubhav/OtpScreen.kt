@@ -66,7 +66,7 @@ class OtpScreen : AppCompatActivity() {
                             progressBar?.setVisibility(View.GONE)
                             btnsubmit?.setVisibility(View.VISIBLE)
                             if (task.isSuccessful) {
-                                val intent = Intent(applicationContext, HomeFragment::class.java)
+                                val intent = Intent(applicationContext, MainActivity::class.java)
                                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                                 Toast.makeText(this@OtpScreen,"Authentication Successfully",Toast.LENGTH_SHORT).show()
                                 startActivity(intent)
